@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+<title>Klassifikationstjeneste BETA</title>
+	<script src="classification.js" type="text/javascript" language="JavaScript"></script>
+	<script src="jquery-3.3.1.js" type="text/javascript" language="JavaScript"></script>
+	<script src="jquery-ui.min.js" type="text/javascript" language="JavaScript"></script>
+	<script src="jquery.dataTables.min.js" type="text/javascript" language="JavaScript"></script>
+	
+<link rel="stylesheet" type="text/css" href="classification.css"/>
+<link rel="stylesheet" type="text/css" href="jquery.dataTables.min.css"/>
+<link rel="shortcut icon" href="https://arkitektur.digst.dk/sites/default/files/favicon.png" type="image/png" />
+
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="d3.js"></script>
+    <script type="text/javascript" src="d3.layout.js"></script>
+    <style type="text/css">
+
+
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 11px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+    </style>
+</head>
+<body>
+  
+<div class="header">
+<h2><p style="color: #ffffff; background-color: #ff0000">
+BETAVERSION - Denne side er under udvikling </p>
+</h2>
+<h1>Velkommen til det fællesoffentlige klassifikationstjeneste</h1>
+
+</div>
+
+
+
+	
+
+<div id="bodyDiv">
+
+
+  På den fællesoffentlige klassifikationsserver findes disse klasifikationer: klik på dem  
+  <div id="klassifikationerDiv"></div>
+  <div id="traeDiv"></div>
+
+<div id="tabeldiv" >
+
+</div>
+</div>
+
+</body>
+<script>
+/*original
+var m = [20, 120, 20, 120],
+w = 1280 - m[1] - m[3],
+h = 800 - m[0] - m[2],
+i = 0,
+root;
+*/
+
+var m = [20, 120, 20, 170],
+w = 880 - m[1] - m[3],
+h = 800 - m[0] - m[2],
+i = 0,
+root;
+
+var tree = d3.layout.tree()
+    .size([h, w]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+//tree position on page
+var vis = d3.select("#traeDiv").append("svg:svg")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+  .append("svg:g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+/*
+d3.json("flare.json", function(json) {
+  root = json;
+  root.x0 = h / 2;
+  root.y0 = 0;
+
+  function toggleAll(d) {
+    if (d.children) {
+      d.children.forEach(toggleAll);
+      toggle(d);
+    }
+  }
+
+  // Initialize the display to show a few nodes.
+  root.children.forEach(toggleAll);
+  toggle(root.children[1]);
+  toggle(root.children[1].children[2]);
+  toggle(root.children[9]);
+  toggle(root.children[9].children[0]);
+
+  update(root);
+});
+*/
+
+window.onload = function() {
+
+	start();
+};
+	</script>
+	</html>

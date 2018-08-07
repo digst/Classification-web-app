@@ -10,9 +10,9 @@ Files for a HTML web-app, giving GUI access to the classification service
 
 ## Adgang:
 Brugere kan tilgå klassifikationer gennem tre kanaler:
-+Klassifikationsredaktører arbejder med deres klassifikationer i VocBenc brugerinterfacet.
-+Klassifikationsbrugere kan se og downloade klassifikationer fra web-appen på http://data.gov.dk/classification
-+Udviklere kan anvende REST-servicen på http://grlc.io/api/digst/classification, hvor de enkelte REST-methods beskrives nøjere
++ Klassifikationsredaktører arbejder med deres klassifikationer i VocBenc brugerinterfacet.
++ Klassifikationsbrugere kan se og downloade klassifikationer fra web-appen på http://data.gov.dk/classification
++ Udviklere kan anvende REST-servicen på http://grlc.io/api/digst/classification, hvor de enkelte REST-methods beskrives nøjere
 
 ![alt text](https://github.com/digst/Classification-web-app/blob/master/klassifikationsservice.png "Langhårede deltagere foretrækkes")
 

@@ -14,6 +14,7 @@ Klassifikationsredaktører arbejder med deres klassifikationer i VocBenc brugeri
 Klassifikationsbrugere kan se og downloade klassifikationer fra web-appen på http://data.gov.dk/classification
 Udviklere kan anvende REST-servicen på http://grlc.io/api/digst/classification, hvor de enkelte REST-methods beskrives nøjere
 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 Arkitekturkomponenter:
 Klassifikations-service-arkitekturen er baseret på samspil mellem en række web-baserede applikationer.
 

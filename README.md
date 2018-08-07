@@ -16,7 +16,7 @@ Brugere kan tilgå klassifikationer gennem tre kanaler:
 
 ![alt text](https://github.com/digst/Classification-web-app/blob/master/klassifikationsservice.png "Langhårede deltagere foretrækkes")
 
-##Arkitekturkomponenter:
+## Arkitekturkomponenter: 
 Klassifikations-service-arkitekturen er baseret på samspil mellem en række web-baserede applikationer.
 
 ### rdf4j:

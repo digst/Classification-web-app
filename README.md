@@ -24,12 +24,12 @@ Klassifikationerne opbevares i en triple-store i en rdf4j (tidl. Open Sesame) da
 + SPARQL-endpoint: http://83.169.40.208:8081/rdf4j-server/repositories/vb1
 
 ### VocBench:
-VocBench er den grafiske adgang til redaktion af klassifikationerne, VocBench opretholder brugerstyring, versionering og intregritet af klassifikationerne. 
+VocBench er den grafiske adgang til redaktion af klassifikationerne, VocBench opretholder brugerstyring, versionering og integritet af klassifikationerne. 
 Alle de offentlige klassifikationer opbevares i samme 'project' i VocBench. 
 + VocBench adgang: http://vocbench.rdfined.dk:8080/vocbench3
 
 ### grlc:
-grlc genererer et REST-API med læse-adgang til klassifikationerne. grlc fortolker en række SPARQL-queries, lagret på GitHub og udstiller hver af disse som en REST-ressurce. 
+grlc genererer et REST-API med læse-adgang til klassifikationerne. grlc fortolker en række SPARQL-queries, lagret på GitHub og udstiller hver af disse som en REST-ressource. 
 grlc genererer yderligere en swagger-GUI til dokumentation af REST-servicen og en web-service specifikationsfil overholdende Swagger 2.0 = OpenApi 2.0
 + grlc-projektet http://grlc.io
 + Spec. fil: http://grlc.io/api/digst/classification/spec
@@ -43,7 +43,7 @@ GitHub varetager bruger- og versionsstyring.
 + https://github.com/digst/Classification
 
 ### Klassifikations-web-app:
-Web-appen giver kikke-adgang til klassifikationerne, disse vises på liste og kan udfoldes til et træ og en tabel over elementer. Komplette klassifikatoner og enkeltelementer kan downloades som RDF/XML. 
+Web-appen giver kikke-adgang til klassifikationerne, disse vises på liste og kan udfoldes til et træ og en tabel over elementer. Komplette klassifikationer og enkeltelementer kan downloades som RDF/XML. 
 + Web-appen er placeret på: http://data.gov.dk/classification
 + Kildekode på: https://github.com/digst/Classification-web-app
 
